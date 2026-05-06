@@ -99,8 +99,8 @@ python3 scripts/generate_video.py --batch config.json
 | edge-tts | latest | 微软语音合成 API |
 | moviepy | latest | 视频剪辑库 |
 
-## 💡 老八避坑指南 (Server Pitfalls)
-**来自服务器端实战的血泪经验总结：**
+## 💡 避坑指南 (Server Pitfalls)
+**来自副业工坊服务器端实战的血泪经验总结：**
 
 1. **🐢 渲染超时问题**: 避免在服务器使用复杂的 `zoompan` 动态滤镜（极慢且易超时）。**最佳实践**: 使用静态背景图 (`-tune stillimage`)，合成速度提升 10 倍！
 2. **🌐 素材下载失败**: Unsplash/Pixabay 等图源常有反爬机制。**最佳实践**: 提前将高清背景图和白噪音下载到本地 `assets/` 目录，优先读取本地文件。

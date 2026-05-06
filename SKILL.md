@@ -84,8 +84,8 @@ pip install -r requirements.txt
 - 首次运行会自动下载 TTS 模型缓存。
 - 确保有足够的磁盘空间（视频文件较大）。
 
-## ⚡️ 服务器端避坑指南 (Server Pitfalls)
-**老八实战总结：**
+## 💡 避坑指南 (Server Pitfalls)
+**来自副业工坊服务器端实战的血泪经验总结：**
 1. **FFmpeg `zoompan` 超时**: 在服务器上避免使用复杂的 `zoompan` 滤镜（极慢且易超时）。**推荐方案**：直接使用静态背景图 (`-tune stillimage`) 或简单的 `scale` 缩放，合成速度提升 10 倍。
 2. **素材下载 403/超时**: Pixabay/Unsplash 等图源常有反爬或连接超时。**推荐方案**：批量任务前，先将 BGM 和背景图下载到本地 `assets/` 目录，脚本优先读取本地文件。
 3. **GitHub 推送认证**: 服务器无交互终端，`gh auth login` 经常失败。**推荐方案**：使用 `git remote add origin https://<TOKEN>@github.com/...` 格式推送，稳定可靠。
