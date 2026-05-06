@@ -1,14 +1,21 @@
 ---
 name: sleep-audiobook-video
 description: "AI 自动化生成“睡前听书/助眠”视频流水线。支持多账号矩阵、批量文案生成、TTS 配音和视频合成。"
-author: "老八"
-version: "0.1.0"
+author: "副业工坊"
+website: "https://www.fuyegongfang.com"
+version: "0.1.1"
 dependencies:
   - python3
   - ffmpeg
 ---
 
 # Sleep Audiobook Video Generator
+
+<div align="center">
+
+[![Website](https://img.shields.io/badge/官网-副业工坊-blue?style=for-the-badge&logo=chrome)](https://www.fuyegongfang.com)
+
+</div>
 
 ## 📖 简介
 这是一个用于批量生产“睡前听书”、“助眠读书”类短视频的自动化流水线。
